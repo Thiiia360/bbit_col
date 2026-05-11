@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+
 </head>
+<link rel="stylesheet" href="style.css "> 
 <body>
  <div class="toplink">  
   <a href="./"> Home </a>&#65372;
@@ -15,10 +17,7 @@
     <div class="banner">
         <h1>Talk to us</h1>
     </div>
-     <div class="row">
-        <div class="left_side_bar">
-            <h3>Left Side Bar</h3>
-        </div>
+     
         <div class="content">
             <h2>Contact Us</h2>
             <p>This is the contact page for our website.</p>
@@ -32,51 +31,37 @@
         <label for="Email">Email:</label><br>
         <input type="email" name="Email" placeholder="Enter your Email"
         required><br>
-        <input type="number" name="" placeholder="Enter your Phone Number"
-        required><br>
-        <input type="password" name="" placeholder="Enter your Password"
-        required><br>
-        <input type="date" name="" placeholder="Enter your Date of Birth"
-        required><br>
-        <input type="time" name="" placeholder="Enter your Time of Birth"
-        required><br>
-        <input type="color" name="" placeholder="Enter your Favourite Color"
-        required><br>
-        <input type="range" name="" placeholder="Enter your Age"
-        required><br>
-        <input type="url" name="" placeholder="Enter your Website"
-        required><br>
-        <input type="file" name="" placeholder="upload file"
-        required><br>
-        
-        <input type= "radio" name="rating" value="1">1<br>
-        <input type= "radio" name="rating" value="2">2<br>
-        <input type= "radio" name="rating" value="3">3<br>
-        <input type= "radio" name="rating" value="4">4<br>
-        <input type= "radio" name="rating" value="5">5<br>
-<input type="checkbox" name="subscribe" value="yes">Subscribe to BBIT newsletter<br>
-<input type="checkbox" name="subscribe" value="yes">Subscribe to BICS newsletter<br>
 
-        
-<select name ="" id="">
-    <option value="">Select your country</option>
-    <option value="Kenya">Kenya</option>
-    <option value="Uganda">Uganda</option>
-    <option value="Tanzania">Tanzania</option>
-    <option value="Rwanda">Rwanda</option>
-</select><br>
-<textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea><br>
 
-<button type="upload ">upload file</button>
-        <button type="submit">Submit Details</button><br>
-    </form>
-<dl>
-    <dt>Phone</dt>
-    <dd><a href="tel:+11234567890">+1 (123) 456-7890</a></dd>
-    <dt>Email</dt>
-    <dd><a href="mailto:info@company.com">bbit@example.com</a></dd>
-    <dt>Address</dt>
-    <dd>123 Main Street, City, Country</dd>
-</dl>
+        <label for="phone">Phone Number:</label><br>
+
+<div class="phone-box">
+
+    <select name="countryCode" required>
+        <option value="+254">+254</option>
+        <option value="+1">+1</option>
+        <option value="+44">+44</option>
+        <option value="+91">+91</option>
+    </select>
+
+    <input 
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Enter your Phone Number"
+        maxlength="9"
+        pattern="[0-9]{9}"
+        required
+    >
+
+</div>
+
+        <label for="Subject">Subject:</label><br>
+        <input type="subject line" name="Subject" placeholder="Subject Line"
+        required><br>
+        Message
+        
+        <button type="message">send message</button><br>
+
 </body>
 </html>
